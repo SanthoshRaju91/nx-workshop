@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatCardModule } from '@angular/material/card'
 import { RouterModule } from '@angular/router';
+import { StoreUiSharedModule } from '@bg-hoard/store/ui-shared'
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
-    MatCardModule
+    MatCardModule,
+    StoreUiSharedModule
   ],
   providers: [],
   bootstrap: [AppComponent],
